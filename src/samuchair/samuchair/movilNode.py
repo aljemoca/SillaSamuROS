@@ -23,7 +23,7 @@ from time import sleep
 #       E! Señalizar fase errónea
 #       Q! Señalizar fin de la fase
 
-
+TAM_BUFFER = 30
 
 class ComMovil:
     
@@ -31,7 +31,7 @@ class ComMovil:
         self.puerto=''
         self.ser=''
         self.comandoRecibido=False
-        self.buffer=['0']*30
+        self.buffer=['0']*TAM_BUFFER
         self.comando=''
         self.index=0
         return
@@ -55,7 +55,7 @@ class ComMovil:
 
     def hayComando(self):
         while self.hayDatos() and not self.comandoRecibido:
-            self.buffer[self.index]=self.ser.read().decode()
+            self.buffer[self.index]=self.ser.read().decode('utf-8', errors='ignore')
             if self.buffer[self.index]=='!':
                 self.comando=''.join(self.buffer[0:self.index])
                 self.comandoRecibido=True
@@ -64,6 +64,8 @@ class ComMovil:
             else:
                 if self.buffer[self.index]!='\r' and self.buffer[self.index]!='\n':
                     self.index = self.index+1
+                if self.index == TAM_BUFFER -1:
+                    self.index=0
                 self.commandoRecibido=False
         return self.comandoRecibido
     
@@ -78,8 +80,8 @@ class ComMovil:
         #print(ent)
         if len(ent)>2:
             tipo,valor=1,ent
-        else:
-            ent[0] = ent[0].upper()
+        elif len(ent)>0:
+            #ent[0] = ent[0].upper()
             if ent[0]=='G':
                 tipo,valor=2,''
             elif ent[0]=='S':
@@ -97,6 +99,9 @@ class ComMovil:
             else:
                 tipo=-1
                 valor='0'
+        else:
+            tipo=-1
+            valor='0'
         return tipo,valor
 
 
@@ -139,8 +144,8 @@ class ComMovil:
 class movilNode(Node):
     def __init__(self):
         super().__init__('movil_node')
-#        self.port = "/dev/Joystick"
-        self.port = "/dev/ttyUSB0"
+        self.port = "/dev/Joystick"
+#        self.port = "/dev/ttyUSB0"
         self.movil = ComMovil()  # Ajusta el puerto según corresponda
         self.movil.establecePuerto(self.port)
         self.publisher_name = self.create_publisher(String, 'name_movil', 2)
@@ -178,7 +183,7 @@ class movilNode(Node):
                 elif tipo==3:
                     msg.data = 30 #Stop
                 elif tipo==6:
-                    msg.data=40   #Error
+                    msg.data = 40   #Error
                 elif tipo==4:
                     msg.data=int(valor,16)
                 elif tipo==8:

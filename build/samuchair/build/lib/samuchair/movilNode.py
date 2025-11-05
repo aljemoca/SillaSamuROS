@@ -95,7 +95,7 @@ class ComMovil:
             elif ent[0]=='M':
                 tipo,valor=7,ent[1]
             elif ent[0]=='Q':
-                tipo.valor=8,ent[1]
+                tipo,valor=8,''
             else:
                 tipo=-1
                 valor='0'
@@ -144,8 +144,8 @@ class ComMovil:
 class movilNode(Node):
     def __init__(self):
         super().__init__('movil_node')
-        self.port = "/dev/Joystick"
-#        self.port = "/dev/ttyUSB0"
+#        self.port = "/dev/Joystick"
+        self.port = "/dev/ttyUSB0"
         self.movil = ComMovil()  # Ajusta el puerto según corresponda
         self.movil.establecePuerto(self.port)
         self.publisher_name = self.create_publisher(String, 'name_movil', 2)

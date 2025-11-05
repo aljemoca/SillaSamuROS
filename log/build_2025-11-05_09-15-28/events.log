@@ -1,0 +1,379 @@
+[0.000000] (-) TimerEvent: {}
+[0.001277] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.001407] (prueba) JobQueued: {'identifier': 'prueba', 'dependencies': OrderedDict()}
+[0.001467] (samuchair) JobQueued: {'identifier': 'samuchair', 'dependencies': OrderedDict()}
+[0.001521] (samuchair_interfaces) JobQueued: {'identifier': 'samuchair_interfaces', 'dependencies': OrderedDict()}
+[0.001572] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.100591] (-) TimerEvent: {}
+[0.166473] (prueba) JobStarted: {'identifier': 'prueba'}
+[0.200893] (-) TimerEvent: {}
+[0.304677] (-) TimerEvent: {}
+[0.407377] (-) TimerEvent: {}
+[0.508561] (-) TimerEvent: {}
+[0.610233] (-) TimerEvent: {}
+[0.711121] (-) TimerEvent: {}
+[0.814700] (-) TimerEvent: {}
+[0.915743] (-) TimerEvent: {}
+[1.016807] (-) TimerEvent: {}
+[1.117769] (-) TimerEvent: {}
+[1.218900] (-) TimerEvent: {}
+[1.322126] (-) TimerEvent: {}
+[1.422667] (-) TimerEvent: {}
+[1.524470] (-) TimerEvent: {}
+[1.625469] (-) TimerEvent: {}
+[1.727226] (-) TimerEvent: {}
+[1.828149] (-) TimerEvent: {}
+[1.928957] (-) TimerEvent: {}
+[2.032079] (-) TimerEvent: {}
+[2.132879] (-) TimerEvent: {}
+[2.233814] (-) TimerEvent: {}
+[2.299758] (my_robot_controller) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_robot_controller', 'build', '--build-base', '/home/labserver/ros2_ws/build/my_robot_controller/build', 'install', '--record', '/home/labserver/ros2_ws/build/my_robot_controller/install.log', '--single-version-externally-managed'], 'cwd': '/home/labserver/ros2_ws/src/my_robot_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'labserver', 'LC_TIME': 'es_ES.UTF-8', 'ROS_PACKAGE_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/share', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/labserver', 'OLDPWD': '/home/labserver', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_ES.UTF-8', 'SYSTEMD_EXEC_PID': '1319', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/labserver/ros2_ws/install:/home/labserver/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'labserver', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/labserver/ros2_ws/install/samuchair_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'labserver', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/labserver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/labserver/.local/bin/spyder', 'SESSION_MANAGER': 'local/labserverRos2:@/tmp/.ICE-unix/1267,unix/labserverRos2:/tmp/.ICE-unix/1267', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_ES.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/89349d2b_54a2_4f9e_88b1_ea300551e02f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.392DF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/labserver/ros2_ws/install/samuchair:/home/labserver/ros2_ws/install/prueba:/home/labserver/ros2_ws/install/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/labserver/ros2_ws/build/my_robot_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/labserver/ros2_ws/build/my_robot_controller/prefix_override:/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/labserver/ros2_ws/src/build/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces'}, 'shell': False}
+[2.335849] (-) TimerEvent: {}
+[2.380662] (prueba) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/prueba', 'build', '--build-base', '/home/labserver/ros2_ws/build/prueba/build', 'install', '--record', '/home/labserver/ros2_ws/build/prueba/install.log', '--single-version-externally-managed'], 'cwd': '/home/labserver/ros2_ws/src/prueba', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'labserver', 'LC_TIME': 'es_ES.UTF-8', 'ROS_PACKAGE_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/share', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/labserver', 'OLDPWD': '/home/labserver', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_ES.UTF-8', 'SYSTEMD_EXEC_PID': '1319', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/labserver/ros2_ws/install:/home/labserver/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'labserver', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/labserver/ros2_ws/install/samuchair_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'labserver', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/labserver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/labserver/.local/bin/spyder', 'SESSION_MANAGER': 'local/labserverRos2:@/tmp/.ICE-unix/1267,unix/labserverRos2:/tmp/.ICE-unix/1267', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_ES.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/89349d2b_54a2_4f9e_88b1_ea300551e02f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.392DF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/labserver/ros2_ws/install/samuchair:/home/labserver/ros2_ws/install/prueba:/home/labserver/ros2_ws/install/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/labserver/ros2_ws/build/prueba', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/labserver/ros2_ws/build/prueba/prefix_override:/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/labserver/ros2_ws/src/build/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces'}, 'shell': False}
+[2.437952] (-) TimerEvent: {}
+[2.538635] (-) TimerEvent: {}
+[2.624314] (my_robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[2.640614] (-) TimerEvent: {}
+[2.645250] (my_robot_controller) StdoutLine: {'line': b'writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO\n'}
+[2.647667] (my_robot_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt\n'}
+[2.649319] (my_robot_controller) StdoutLine: {'line': b'writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt\n'}
+[2.650891] (my_robot_controller) StdoutLine: {'line': b'writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt\n'}
+[2.652100] (my_robot_controller) StdoutLine: {'line': b'writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt\n'}
+[2.744175] (-) TimerEvent: {}
+[2.759237] (prueba) StdoutLine: {'line': b'running egg_info\n'}
+[2.790381] (prueba) StdoutLine: {'line': b'writing ../../build/prueba/prueba.egg-info/PKG-INFO\n'}
+[2.797495] (prueba) StdoutLine: {'line': b'writing dependency_links to ../../build/prueba/prueba.egg-info/dependency_links.txt\n'}
+[2.797710] (prueba) StdoutLine: {'line': b'writing entry points to ../../build/prueba/prueba.egg-info/entry_points.txt\n'}
+[2.797767] (prueba) StdoutLine: {'line': b'writing requirements to ../../build/prueba/prueba.egg-info/requires.txt\n'}
+[2.797818] (prueba) StdoutLine: {'line': b'writing top-level names to ../../build/prueba/prueba.egg-info/top_level.txt\n'}
+[2.844963] (-) TimerEvent: {}
+[2.877102] (my_robot_controller) StdoutLine: {'line': b"reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[2.877907] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[2.878661] (my_robot_controller) StdoutLine: {'line': b'running build\n'}
+[2.878977] (my_robot_controller) StdoutLine: {'line': b'running build_py\n'}
+[2.879495] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/my_first_node.py -> /home/labserver/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[2.879988] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/__init__.py -> /home/labserver/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[2.880463] (my_robot_controller) StdoutLine: {'line': b'running install\n'}
+[2.881200] (my_robot_controller) StderrLine: {'line': b'/home/labserver/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[2.881317] (my_robot_controller) StderrLine: {'line': b'!!\n'}
+[2.881370] (my_robot_controller) StderrLine: {'line': b'\n'}
+[2.881417] (my_robot_controller) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.881464] (my_robot_controller) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[2.881511] (my_robot_controller) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[2.881557] (my_robot_controller) StderrLine: {'line': b'        standards-based tools.\n'}
+[2.881602] (my_robot_controller) StderrLine: {'line': b'\n'}
+[2.881648] (my_robot_controller) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[2.881694] (my_robot_controller) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.881739] (my_robot_controller) StderrLine: {'line': b'\n'}
+[2.881793] (my_robot_controller) StderrLine: {'line': b'!!\n'}
+[2.881839] (my_robot_controller) StderrLine: {'line': b'  self.initialize_options()\n'}
+[2.893327] (my_robot_controller) StdoutLine: {'line': b'running install_lib\n'}
+[2.913146] (my_robot_controller) StdoutLine: {'line': b'running install_data\n'}
+[2.936323] (my_robot_controller) StdoutLine: {'line': b'copying resource/my_robot_controller -> /home/labserver/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[2.938152] (my_robot_controller) StdoutLine: {'line': b'copying package.xml -> /home/labserver/ros2_ws/install/my_robot_controller/share/my_robot_controller\n'}
+[2.941640] (my_robot_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.945616] (-) TimerEvent: {}
+[2.959142] (my_robot_controller) StdoutLine: {'line': b"removing '/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.964041] (my_robot_controller) StdoutLine: {'line': b'Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info\n'}
+[2.968192] (my_robot_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[3.018424] (prueba) StdoutLine: {'line': b"reading manifest file '../../build/prueba/prueba.egg-info/SOURCES.txt'\n"}
+[3.020070] (prueba) StdoutLine: {'line': b"writing manifest file '../../build/prueba/prueba.egg-info/SOURCES.txt'\n"}
+[3.020807] (prueba) StdoutLine: {'line': b'running build\n'}
+[3.020935] (prueba) StdoutLine: {'line': b'running build_py\n'}
+[3.021089] (prueba) StdoutLine: {'line': b'copying prueba/prueba.py -> /home/labserver/ros2_ws/build/prueba/build/lib/prueba\n'}
+[3.022234] (prueba) StderrLine: {'line': b'/home/labserver/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[3.022482] (prueba) StderrLine: {'line': b'!!\n'}
+[3.022581] (prueba) StderrLine: {'line': b'\n'}
+[3.022670] (prueba) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.022753] (prueba) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[3.022838] (prueba) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[3.022909] (prueba) StderrLine: {'line': b'        standards-based tools.\n'}
+[3.022979] (prueba) StderrLine: {'line': b'\n'}
+[3.023051] (prueba) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[3.023124] (prueba) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.023204] (prueba) StderrLine: {'line': b'\n'}
+[3.023268] (prueba) StderrLine: {'line': b'!!\n'}
+[3.023315] (prueba) StderrLine: {'line': b'  self.initialize_options()\n'}
+[3.028139] (prueba) StdoutLine: {'line': b'copying prueba/listener.py -> /home/labserver/ros2_ws/build/prueba/build/lib/prueba\n'}
+[3.028652] (prueba) StdoutLine: {'line': b'copying prueba/__init__.py -> /home/labserver/ros2_ws/build/prueba/build/lib/prueba\n'}
+[3.029038] (prueba) StdoutLine: {'line': b'running install\n'}
+[3.029432] (prueba) StdoutLine: {'line': b'running install_lib\n'}
+[3.045998] (-) TimerEvent: {}
+[3.050092] (my_robot_controller) StdoutLine: {'line': b'Installing test_node script to /home/labserver/ros2_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[3.053581] (my_robot_controller) StdoutLine: {'line': b"writing list of installed files to '/home/labserver/ros2_ws/build/my_robot_controller/install.log'\n"}
+[3.061506] (prueba) StdoutLine: {'line': b'running install_data\n'}
+[3.108523] (prueba) StdoutLine: {'line': b'copying resource/prueba -> /home/labserver/ros2_ws/install/prueba/share/ament_index/resource_index/packages\n'}
+[3.113438] (prueba) StdoutLine: {'line': b'copying package.xml -> /home/labserver/ros2_ws/install/prueba/share/prueba\n'}
+[3.114110] (prueba) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.143499] (prueba) StdoutLine: {'line': b"removing '/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages/prueba-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.143714] (prueba) StdoutLine: {'line': b'Copying ../../build/prueba/prueba.egg-info to /home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages/prueba-0.0.0-py3.10.egg-info\n'}
+[3.146837] (-) TimerEvent: {}
+[3.147174] (prueba) StdoutLine: {'line': b'running install_scripts\n'}
+[3.158281] (my_robot_controller) CommandEnded: {'returncode': 0}
+[3.224344] (prueba) StdoutLine: {'line': b'Installing listener script to /home/labserver/ros2_ws/install/prueba/lib/prueba\n'}
+[3.227188] (prueba) StdoutLine: {'line': b'Installing talker script to /home/labserver/ros2_ws/install/prueba/lib/prueba\n'}
+[3.230040] (prueba) StdoutLine: {'line': b"writing list of installed files to '/home/labserver/ros2_ws/build/prueba/install.log'\n"}
+[3.251890] (-) TimerEvent: {}
+[3.269935] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[3.272410] (samuchair) JobStarted: {'identifier': 'samuchair'}
+[3.352549] (-) TimerEvent: {}
+[3.435003] (prueba) CommandEnded: {'returncode': 0}
+[3.453568] (-) TimerEvent: {}
+[3.519579] (prueba) JobEnded: {'identifier': 'prueba', 'rc': 0}
+[3.523323] (samuchair_interfaces) JobStarted: {'identifier': 'samuchair_interfaces'}
+[3.555121] (-) TimerEvent: {}
+[3.658195] (-) TimerEvent: {}
+[3.759001] (-) TimerEvent: {}
+[3.860515] (-) TimerEvent: {}
+[3.961369] (-) TimerEvent: {}
+[4.062768] (-) TimerEvent: {}
+[4.130449] (samuchair_interfaces) JobProgress: {'identifier': 'samuchair_interfaces', 'progress': 'cmake'}
+[4.131708] (samuchair_interfaces) JobProgress: {'identifier': 'samuchair_interfaces', 'progress': 'build'}
+[4.134144] (samuchair_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/labserver/ros2_ws/build/samuchair_interfaces', '--', '-j2', '-l2'], 'cwd': '/home/labserver/ros2_ws/build/samuchair_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'labserver'), ('LC_TIME', 'es_ES.UTF-8'), ('ROS_PACKAGE_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/labserver'), ('OLDPWD', '/home/labserver'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('SYSTEMD_EXEC_PID', '1319'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/labserver/ros2_ws/install:/home/labserver/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'labserver'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/labserver/ros2_ws/install/samuchair_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'labserver'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/labserver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/labserver/.local/bin/spyder'), ('SESSION_MANAGER', 'local/labserverRos2:@/tmp/.ICE-unix/1267,unix/labserverRos2:/tmp/.ICE-unix/1267'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/89349d2b_54a2_4f9e_88b1_ea300551e02f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.392DF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/labserver/ros2_ws/install/samuchair:/home/labserver/ros2_ws/install/prueba:/home/labserver/ros2_ws/install/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/labserver/ros2_ws/build/samuchair_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/labserver/ros2_ws/src/build/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces')]), 'shell': False}
+[4.165725] (-) TimerEvent: {}
+[4.232641] (samuchair_interfaces) StdoutLine: {'line': b'[  3%] Built target samuchair_interfaces__cpp\n'}
+[4.239512] (samuchair_interfaces) StdoutLine: {'line': b'[ 12%] Built target samuchair_interfaces__rosidl_generator_c\n'}
+[4.268036] (-) TimerEvent: {}
+[4.292482] (samuchair_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_samuchair_interfaces\n'}
+[4.293308] (samuchair_interfaces) StdoutLine: {'line': b'[ 22%] Built target samuchair_interfaces__rosidl_typesupport_cpp\n'}
+[4.340048] (samuchair_interfaces) StdoutLine: {'line': b'[ 32%] Built target samuchair_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.368457] (-) TimerEvent: {}
+[4.375199] (samuchair_interfaces) StdoutLine: {'line': b'[ 41%] Built target samuchair_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.389086] (samuchair_interfaces) StdoutLine: {'line': b'[ 51%] Built target samuchair_interfaces__rosidl_typesupport_c\n'}
+[4.419701] (samuchair_interfaces) StdoutLine: {'line': b'[ 61%] Built target samuchair_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.440688] (samuchair_interfaces) StdoutLine: {'line': b'[ 70%] Built target samuchair_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.468713] (-) TimerEvent: {}
+[4.473094] (samuchair_interfaces) StdoutLine: {'line': b'[ 70%] Built target samuchair_interfaces\n'}
+[4.504680] (samuchair_interfaces) StdoutLine: {'line': b'[ 74%] Built target samuchair_interfaces__py\n'}
+[4.536798] (samuchair_interfaces) StdoutLine: {'line': b'[ 80%] Built target samuchair_interfaces__rosidl_generator_py\n'}
+[4.576557] (-) TimerEvent: {}
+[4.673709] (samuchair_interfaces) StdoutLine: {'line': b'[ 87%] Built target samuchair_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.679257] (-) TimerEvent: {}
+[4.787070] (-) TimerEvent: {}
+[4.805620] (samuchair_interfaces) StdoutLine: {'line': b'[ 93%] Built target samuchair_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.893785] (-) TimerEvent: {}
+[4.902764] (samuchair_interfaces) StdoutLine: {'line': b'[100%] Built target samuchair_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.996716] (-) TimerEvent: {}
+[5.098357] (-) TimerEvent: {}
+[5.201161] (-) TimerEvent: {}
+[5.303938] (-) TimerEvent: {}
+[5.310655] (samuchair_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.378685] (samuchair_interfaces) StdoutLine: {'line': b'writing samuchair_interfaces.egg-info/PKG-INFO\n'}
+[5.384685] (samuchair_interfaces) StdoutLine: {'line': b'writing dependency_links to samuchair_interfaces.egg-info/dependency_links.txt\n'}
+[5.385051] (samuchair_interfaces) StdoutLine: {'line': b'writing top-level names to samuchair_interfaces.egg-info/top_level.txt\n'}
+[5.404199] (-) TimerEvent: {}
+[5.505513] (-) TimerEvent: {}
+[5.608277] (-) TimerEvent: {}
+[5.709545] (-) TimerEvent: {}
+[5.786164] (samuchair_interfaces) StdoutLine: {'line': b"reading manifest file 'samuchair_interfaces.egg-info/SOURCES.txt'\n"}
+[5.795307] (samuchair_interfaces) StdoutLine: {'line': b"writing manifest file 'samuchair_interfaces.egg-info/SOURCES.txt'\n"}
+[5.811186] (-) TimerEvent: {}
+[5.913722] (-) TimerEvent: {}
+[5.965642] (samuchair_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_samuchair_interfaces_egg\n'}
+[6.013342] (samuchair_interfaces) CommandEnded: {'returncode': 0}
+[6.014138] (-) TimerEvent: {}
+[6.120475] (-) TimerEvent: {}
+[6.192600] (samuchair) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/samuchair', 'build', '--build-base', '/home/labserver/ros2_ws/build/samuchair/build', 'install', '--record', '/home/labserver/ros2_ws/build/samuchair/install.log', '--single-version-externally-managed'], 'cwd': '/home/labserver/ros2_ws/src/samuchair', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'labserver', 'LC_TIME': 'es_ES.UTF-8', 'ROS_PACKAGE_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/share', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/labserver', 'OLDPWD': '/home/labserver', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_ES.UTF-8', 'SYSTEMD_EXEC_PID': '1319', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/labserver/ros2_ws/install:/home/labserver/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'labserver', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/labserver/ros2_ws/install/samuchair_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'labserver', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/labserver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/labserver/.local/bin/spyder', 'SESSION_MANAGER': 'local/labserverRos2:@/tmp/.ICE-unix/1267,unix/labserverRos2:/tmp/.ICE-unix/1267', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_ES.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/89349d2b_54a2_4f9e_88b1_ea300551e02f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.392DF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/labserver/ros2_ws/install/samuchair:/home/labserver/ros2_ws/install/prueba:/home/labserver/ros2_ws/install/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/labserver/ros2_ws/build/samuchair', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/labserver/ros2_ws/build/samuchair/prefix_override:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/labserver/ros2_ws/src/build/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/labserver/ros2_ws/install/samuchair_interfaces'}, 'shell': False}
+[6.223307] (-) TimerEvent: {}
+[6.324708] (-) TimerEvent: {}
+[6.425951] (-) TimerEvent: {}
+[6.527103] (-) TimerEvent: {}
+[6.598935] (samuchair_interfaces) JobProgress: {'identifier': 'samuchair_interfaces', 'progress': 'install'}
+[6.627811] (-) TimerEvent: {}
+[6.642888] (samuchair_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/labserver/ros2_ws/build/samuchair_interfaces'], 'cwd': '/home/labserver/ros2_ws/build/samuchair_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'labserver'), ('LC_TIME', 'es_ES.UTF-8'), ('ROS_PACKAGE_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/labserver'), ('OLDPWD', '/home/labserver'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('SYSTEMD_EXEC_PID', '1319'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/labserver/ros2_ws/install:/home/labserver/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'labserver'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/labserver/ros2_ws/install/samuchair_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'labserver'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/labserver/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/labserver/.local/bin/spyder'), ('SESSION_MANAGER', 'local/labserverRos2:@/tmp/.ICE-unix/1267,unix/labserverRos2:/tmp/.ICE-unix/1267'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/89349d2b_54a2_4f9e_88b1_ea300551e02f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.392DF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/labserver/ros2_ws/install/samuchair:/home/labserver/ros2_ws/install/prueba:/home/labserver/ros2_ws/install/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/labserver/ros2_ws/build/samuchair_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/prueba/lib/python3.10/site-packages:/home/labserver/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/labserver/ros2_ws/src/build/my_robot_controller:/home/labserver/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/labserver/ros2_ws/install/samuchair_interfaces')]), 'shell': False}
+[6.685711] (samuchair_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.686003] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/ament_index/resource_index/rosidl_interfaces/samuchair_interfaces\n'}
+[6.686094] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces\n'}
+[6.688143] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg\n'}
+[6.694429] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.694659] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv\n'}
+[6.694730] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/arduino_motor.h\n'}
+[6.694781] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail\n'}
+[6.694828] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__functions.h\n'}
+[6.694877] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__functions.c\n'}
+[6.694924] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__struct.h\n'}
+[6.694972] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__type_support.h\n'}
+[6.695022] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/library_path.sh\n'}
+[6.695090] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/library_path.dsv\n'}
+[6.695142] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_generator_c.so\n'}
+[6.695203] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces\n'}
+[6.695250] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg\n'}
+[6.695298] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.695346] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv\n'}
+[6.695411] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail\n'}
+[6.695474] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__rosidl_typesupport_fastrtps_c.h\n'}
+[6.695537] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.695589] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces\n'}
+[6.695637] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg\n'}
+[6.695688] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.695735] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv\n'}
+[6.695782] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail\n'}
+[6.695829] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__type_support.c\n'}
+[6.695877] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__rosidl_typesupport_introspection_c.h\n'}
+[6.702786] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.702988] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_typesupport_c.so\n'}
+[6.703045] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces\n'}
+[6.703095] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv\n'}
+[6.703142] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail\n'}
+[6.703208] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__struct.hpp\n'}
+[6.703257] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__builder.hpp\n'}
+[6.703305] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__traits.hpp\n'}
+[6.706734] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/arduino_motor.hpp\n'}
+[6.706909] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces\n'}
+[6.706961] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg\n'}
+[6.707012] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.707062] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv\n'}
+[6.707114] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail\n'}
+[6.707181] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.707235] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/dds_fastrtps\n'}
+[6.707285] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.707340] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces\n'}
+[6.707387] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv\n'}
+[6.707434] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail\n'}
+[6.707482] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.707544] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/include/samuchair_interfaces/samuchair_interfaces/srv/detail/arduino_motor__type_support.cpp\n'}
+[6.707593] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.712780] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.712976] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/pythonpath.sh\n'}
+[6.713050] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/pythonpath.dsv\n'}
+[6.713098] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces-0.0.0-py3.10.egg-info\n'}
+[6.713148] (samuchair_interfaces) StdoutLine: {'line': b'-- Installing: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.713197] (samuchair_interfaces) StdoutLine: {'line': b'-- Installing: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.715630] (samuchair_interfaces) StdoutLine: {'line': b'-- Installing: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.718316] (samuchair_interfaces) StdoutLine: {'line': b'-- Installing: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.718579] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces\n'}
+[6.718639] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/samuchair_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.718700] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/samuchair_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.718749] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/libsamuchair_interfaces__rosidl_generator_py.so\n'}
+[6.718798] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/samuchair_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.718846] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/srv\n'}
+[6.718894] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/srv/_arduino_motor_s.c\n'}
+[6.718943] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/srv/__init__.py\n'}
+[6.719046] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/srv/_arduino_motor.py\n'}
+[6.719111] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.719161] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.719208] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/__init__.py\n'}
+[6.719256] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.732707] (-) TimerEvent: {}
+[6.836194] (samuchair_interfaces) StdoutLine: {'line': b"Listing '/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces'...\n"}
+[6.836448] (-) TimerEvent: {}
+[6.836604] (samuchair_interfaces) StdoutLine: {'line': b"Listing '/home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/srv'...\n"}
+[6.840268] (samuchair) StdoutLine: {'line': b'running egg_info\n'}
+[6.850443] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/samuchair_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.850707] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/samuchair_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.850792] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/local/lib/python3.10/dist-packages/samuchair_interfaces/samuchair_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.850882] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/lib/libsamuchair_interfaces__rosidl_generator_py.so\n'}
+[6.853745] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/srv/ArduinoMotor.idl\n'}
+[6.854591] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/srv/ArduinoMotor.srv\n'}
+[6.854832] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/srv/ArduinoMotor_Request.msg\n'}
+[6.856651] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/srv/ArduinoMotor_Response.msg\n'}
+[6.856884] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/ament_index/resource_index/package_run_dependencies/samuchair_interfaces\n'}
+[6.856977] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/ament_index/resource_index/parent_prefix_path/samuchair_interfaces\n'}
+[6.857027] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/ament_prefix_path.sh\n'}
+[6.857074] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.857127] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/path.sh\n'}
+[6.857174] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/environment/path.dsv\n'}
+[6.857290] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/local_setup.bash\n'}
+[6.857345] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/local_setup.sh\n'}
+[6.857393] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/local_setup.zsh\n'}
+[6.857440] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/local_setup.dsv\n'}
+[6.862495] (samuchair_interfaces) StdoutLine: {'line': b'-- Installing: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/package.dsv\n'}
+[6.862721] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/ament_index/resource_index/packages/samuchair_interfaces\n'}
+[6.862777] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.862848] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.864492] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.864879] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.865011] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.865080] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.870692] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.870913] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.870967] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.871015] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.871090] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.871138] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.871224] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.871295] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.871345] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.871397] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.871460] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/export_samuchair_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.871507] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.871554] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.871606] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.871654] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.871716] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.880968] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.883117] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.883182] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfacesConfig.cmake\n'}
+[6.883289] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/cmake/samuchair_interfacesConfig-version.cmake\n'}
+[6.883360] (samuchair_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/labserver/ros2_ws/install/samuchair_interfaces/share/samuchair_interfaces/package.xml\n'}
+[6.897703] (samuchair_interfaces) CommandEnded: {'returncode': 0}
+[6.904408] (samuchair) StdoutLine: {'line': b'writing ../../build/samuchair/samuchair.egg-info/PKG-INFO\n'}
+[6.905726] (samuchair) StdoutLine: {'line': b'writing dependency_links to ../../build/samuchair/samuchair.egg-info/dependency_links.txt\n'}
+[6.908906] (samuchair) StdoutLine: {'line': b'writing entry points to ../../build/samuchair/samuchair.egg-info/entry_points.txt\n'}
+[6.909149] (samuchair) StdoutLine: {'line': b'writing requirements to ../../build/samuchair/samuchair.egg-info/requires.txt\n'}
+[6.913007] (samuchair) StdoutLine: {'line': b'writing top-level names to ../../build/samuchair/samuchair.egg-info/top_level.txt\n'}
+[6.937832] (-) TimerEvent: {}
+[7.038701] (-) TimerEvent: {}
+[7.140908] (-) TimerEvent: {}
+[7.241812] (-) TimerEvent: {}
+[7.280055] (samuchair) StdoutLine: {'line': b"reading manifest file '../../build/samuchair/samuchair.egg-info/SOURCES.txt'\n"}
+[7.280436] (samuchair) StdoutLine: {'line': b"writing manifest file '../../build/samuchair/samuchair.egg-info/SOURCES.txt'\n"}
+[7.288516] (samuchair) StdoutLine: {'line': b'running build\n'}
+[7.288714] (samuchair) StdoutLine: {'line': b'running build_py\n'}
+[7.288767] (samuchair) StdoutLine: {'line': b'copying samuchair/arduinoNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.288895] (samuchair) StdoutLine: {'line': b'copying samuchair/movilNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.288950] (samuchair) StdoutLine: {'line': b'copying samuchair/webcamNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.288999] (samuchair) StdoutLine: {'line': b'copying samuchair/tactilesNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.289067] (samuchair) StdoutLine: {'line': b'copying samuchair/secondarytaskNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.289114] (samuchair) StdoutLine: {'line': b'copying samuchair/ComJoystickManual.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.289167] (samuchair) StdoutLine: {'line': b'copying samuchair/Webcam.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.289253] (samuchair) StdoutLine: {'line': b'copying samuchair/esp32Node.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.292932] (samuchair) StdoutLine: {'line': b'copying samuchair/esp32Node_old.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.293075] (samuchair) StdoutLine: {'line': b'copying samuchair/testArduinoNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.293184] (samuchair) StdoutLine: {'line': b'copying samuchair/__init__.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.293278] (samuchair) StdoutLine: {'line': b'copying samuchair/SecondaryTask.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.293623] (samuchair) StdoutLine: {'line': b'copying samuchair/ComESP32.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair\n'}
+[7.293741] (samuchair) StderrLine: {'line': b'/home/labserver/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[7.296398] (samuchair) StderrLine: {'line': b'!!\n'}
+[7.297697] (samuchair) StderrLine: {'line': b'\n'}
+[7.297789] (samuchair) StderrLine: {'line': b'        ********************************************************************************\n'}
+[7.297837] (samuchair) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[7.297883] (samuchair) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[7.297929] (samuchair) StderrLine: {'line': b'        standards-based tools.\n'}
+[7.297974] (samuchair) StderrLine: {'line': b'\n'}
+[7.298019] (samuchair) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[7.298104] (samuchair) StderrLine: {'line': b'        ********************************************************************************\n'}
+[7.298153] (samuchair) StderrLine: {'line': b'\n'}
+[7.298198] (samuchair) StderrLine: {'line': b'!!\n'}
+[7.298247] (samuchair) StderrLine: {'line': b'  self.initialize_options()\n'}
+[7.298292] (samuchair) StdoutLine: {'line': b'running install\n'}
+[7.314590] (samuchair) StdoutLine: {'line': b'running install_lib\n'}
+[7.343655] (-) TimerEvent: {}
+[7.346643] (samuchair) StdoutLine: {'line': b'copying /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair/movilNode.py -> /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair\n'}
+[7.354043] (samuchair) StdoutLine: {'line': b'byte-compiling /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair/movilNode.py to movilNode.cpython-310.pyc\n'}
+[7.362759] (samuchair) StdoutLine: {'line': b'running install_data\n'}
+[7.409728] (samuchair) StdoutLine: {'line': b'copying launch/record_samuchair.launch.py -> /home/labserver/ros2_ws/install/samuchair/share/samuchair/launch\n'}
+[7.412239] (samuchair) StdoutLine: {'line': b'copying launch/samuchair.launch.py -> /home/labserver/ros2_ws/install/samuchair/share/samuchair/launch\n'}
+[7.412407] (samuchair) StdoutLine: {'line': b'copying resource/samuchair -> /home/labserver/ros2_ws/install/samuchair/share/ament_index/resource_index/packages\n'}
+[7.412462] (samuchair) StdoutLine: {'line': b'copying package.xml -> /home/labserver/ros2_ws/install/samuchair/share/samuchair\n'}
+[7.417175] (samuchair) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.444380] (-) TimerEvent: {}
+[7.467538] (samuchair) StdoutLine: {'line': b"removing '/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.474899] (samuchair) StdoutLine: {'line': b'Copying ../../build/samuchair/samuchair.egg-info to /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair-0.0.0-py3.10.egg-info\n'}
+[7.475486] (samuchair) StdoutLine: {'line': b'running install_scripts\n'}
+[7.546971] (-) TimerEvent: {}
+[7.617862] (samuchair) StdoutLine: {'line': b'Installing arduinoNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.624783] (samuchair) StdoutLine: {'line': b'Installing esp32Node script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.625377] (samuchair) StdoutLine: {'line': b'Installing movilNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.625445] (samuchair) StdoutLine: {'line': b'Installing secondarytaskNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.625494] (samuchair) StdoutLine: {'line': b'Installing tactilesNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.627128] (samuchair) StdoutLine: {'line': b'Installing testArduinoNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.630898] (samuchair) StdoutLine: {'line': b'Installing webcamNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair\n'}
+[7.637022] (samuchair) StdoutLine: {'line': b"writing list of installed files to '/home/labserver/ros2_ws/build/samuchair/install.log'\n"}
+[7.649806] (-) TimerEvent: {}
+[7.715944] (samuchair_interfaces) JobEnded: {'identifier': 'samuchair_interfaces', 'rc': 0}
+[7.754921] (-) TimerEvent: {}
+[7.762091] (samuchair) CommandEnded: {'returncode': 0}
+[7.855241] (-) TimerEvent: {}
+[7.859148] (samuchair) JobEnded: {'identifier': 'samuchair', 'rc': 0}
+[7.862551] (-) EventReactorShutdown: {}

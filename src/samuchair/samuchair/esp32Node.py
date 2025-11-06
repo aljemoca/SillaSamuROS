@@ -20,6 +20,7 @@ class esp32Node(Node):
         super().__init__('esp32_node')
         #self.port = "/dev/esp32_sensor"
         self.port = "/dev/ttyUSB0"
+        self.pot_old=-1
         self.esp32 = ComESP32.ComESP32(self.port)  # Ajusta el puerto según corresponda
         self.publisher_pot = self.create_publisher(Int32, 'pot_esp32', 10)
         self.publisher_leftwheel = self.create_publisher(Int32,'left_wheel_steps',10)
@@ -33,8 +34,10 @@ class esp32Node(Node):
         if not datos[0]:
             msg = Int32()
             msg.data = datos[1]
-            self.publisher_pot.publish(msg)
-            self.get_logger().info(f'Dato publicado Pot: {msg.data}')
+            if msg.data != self.pot_old:
+                self.publisher_pot.publish(msg)
+                self.pot_old=msg.data
+                self.get_logger().info(f'Dato publicado Pot: {msg.data}')
             msg.data = datos[3][0]*(-1)**datos[2][0]
             self.publisher_leftwheel.publish(msg)
             self.get_logger().info(f'Dato publicado LW: {msg.data}')

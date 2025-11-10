@@ -39,7 +39,7 @@ class esp32Node(Node):
                 self.pot_old=msg.data
                 self.get_logger().info(f'Dato publicado Pot: {msg.data}')
             msg.data = datos[3][0]*(-1)**datos[2][0]
-            self.publisher_leftwheel.publish(msg)
+            self.publisher_leftwheel.publish(msg)   
             self.get_logger().info(f'Dato publicado LW: {msg.data}')
             msg.data = datos[3][1]*(-1)**datos[2][1]
             self.publisher_rightwheel.publish(msg)

@@ -80,6 +80,7 @@ class SecondaryTask:
         self.t0=ti.time()
         self.contframes=0
         self.flanco=0
+        return tono
         
 
     def setFs(self,Fs):
@@ -93,7 +94,7 @@ class SecondaryTask:
 
 
     def _audio_callback(self, indata, frames,time,status ):
-        self.maxFrame(indata,frames,time,status)
+        self.maxFrame(indata.copy(),frames,time,status)
 
 
 
@@ -151,6 +152,7 @@ class secondarytaskNode(Node):
         self.subscription = self.create_subscription(String,'tipo_exp',self.sus_function,4)
         self.publisher_st_nexttime = self.create_publisher(Float32, 'random_time', 10)
         self.publisher_st_medida = self.create_publisher(Float32,'diff_time',10)
+        self.publisher_st_atendido = self.create_publisher(Int32,'Attended',10)
         self.interval = self.st.nextTimePoint()
         print(self.interval)
         self.timer = self.create_timer(1.0,self.timer_callback)
@@ -211,10 +213,14 @@ class secondarytaskNode(Node):
         #self.publisher_st_medida.publish(msg)
         #self.get_logger().info(f'Dato publicado ST Medida: {msg.data}')
         if self.activate:
-            self.st.playTone()        
+            self.tono = self.st.playTone()
+            msg = Int32()
+            msg.data = self.tono
+            self.publisher_st_atendido.publish(msg)
+            self.get_logger().info(f'Publicado: "{msg.data}"')
+
         self.start_random_timer()
         self.timeout=0
-
     def publish_loop(self):  #ANTIGUO
         msg_count = 0
         while rclpy.ok():

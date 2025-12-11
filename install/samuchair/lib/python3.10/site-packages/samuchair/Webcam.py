@@ -35,20 +35,25 @@ class Webcam:
         self.ruta = "./fotos/"
         #elf.stop = 0
         self.n_frame = 1
-        
+        self.name=None
+
+    def setName(self,name):
+        self.name=name
+
     def tomar_foto(self):
         ret, frame = self.camera.read()  # Lee un fotograma de la cámara
         if not ret:
             print("Error: No se pudo leer el fotograma de la cámara.")
             return 0
         else:
-            fecha_hora_actual = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-            nombre = self.ruta + fecha_hora_actual +'_'+str(self.n_frame)+ '.jpg'
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            if self.name is not None:
+                fecha_hora_actual = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+                nombre = self.ruta + self.name+'_'+fecha_hora_actual +'_'+str(self.n_frame)+ '.jpg'
+                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-            cv2.imwrite(nombre, frame_rgb)  # Guarda el fotograma como imagen
-            self.n_frame+=1
-            print(f"Foto guardada: {nombre}")
+                cv2.imwrite(nombre, frame_rgb)  # Guarda el fotograma como imagen
+                self.n_frame+=1
+                print(f"Foto guardada: {nombre}")
         return self.n_frame
     
     #def tomar_secuencia(self):

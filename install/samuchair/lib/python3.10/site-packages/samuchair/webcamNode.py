@@ -13,7 +13,7 @@ from std_msgs.msg import Int32
  # Asegúrate de que la ruta de importación sea correcta
 
 from samuchair import Webcam
-
+from samuchair_interfaces.srv import Movil 
 
 class webcamNode(Node):
     def __init__(self):
@@ -21,8 +21,11 @@ class webcamNode(Node):
         self.webcam = Webcam.Webcam()  # Ajusta el puerto según corresponda
         self.publisher_frame = self.create_publisher(Int32, 'frame', 10)
         self.timer = self.create_timer(2, self.timer_callback)  # Llama a la función cada segundo
-
-
+        self.cliente = self.create_client(Movil, 'sujeto_experimental')  #Se añade este cliente para obtener el nombre del sujeto
+        self.activa_webcam = False
+        while not self.cliente.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Esperando al servicio para el nombre del sujeto...')
+        
 
     def __del__(self):
         """Asegura que la cámara se cierre cuando el objeto es destruido."""
@@ -32,12 +35,13 @@ class webcamNode(Node):
         super().destroy_node()
 
     def timer_callback(self):
-        frame = self.webcam.tomar_foto()
-        msg = Int32()
-        msg.data = int(frame)
-        self.publisher_frame.publish(msg)
-        self.get_logger().info(f'Frame: {msg.data}')
- 
+        if self.activa_webcam:
+            frame = self.webcam.tomar_foto()
+            msg = Int32()
+            msg.data = int(frame)
+            self.publisher_frame.publish(msg)
+            self.get_logger().info(f'Frame: {msg.data}')
+    
     def destroy_webcam(self):
         self.webcam.parar()
         del self.webcam

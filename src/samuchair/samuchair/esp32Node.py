@@ -30,7 +30,7 @@ class esp32Node(Node):
 
     def timer_callback(self):
         datos = self.esp32.obtenerMedidas()
-        print(datos)
+        #print(datos)
         if not datos[0]:
             msg = Int32()
             msg.data = datos[1]

@@ -71,14 +71,15 @@ class ComESP32:
         giro = [0,0]
         hall= [0,0]
 
-        pot = int(self.data[1].hex(),16)
-        giro[0] = int(self.data[2].hex(),16)
-        hall[0] = int(self.data[3].hex(),16) <<8 
-        hall[0] += int(self.data[4].hex(),16)  #ver si esto va bien
-        giro[1] = int(self.data[5].hex(),16)
+        if not error:
+            pot = int(self.data[1].hex(),16)
+            giro[0] = int(self.data[2].hex(),16)
+            hall[0] = int(self.data[3].hex(),16) <<8 
+            hall[0] += int(self.data[4].hex(),16)  #ver si esto va bien
+            giro[1] = int(self.data[5].hex(),16)
  
-        hall[1] = int(self.data[6].hex(),16) <<8 
-        hall[1] += int(self.data[7].hex(),16)  #ver si esto va bien
+            hall[1] = int(self.data[6].hex(),16) <<8 
+            hall[1] += int(self.data[7].hex(),16)  #ver si esto va bien
       
         res = list([error,pot,giro,hall])
         return  res

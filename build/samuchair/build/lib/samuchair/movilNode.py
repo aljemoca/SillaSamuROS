@@ -6,6 +6,7 @@ from std_msgs.msg import Int32
  # Asegúrate de que la ruta de importación sea correcta
 import serial
 from time import sleep
+from samuchair_interfaces.srv import Movil  # Importa tu srv generado
 
 
 #Comunicaciones con el Móvil
@@ -145,7 +146,7 @@ class movilNode(Node):
     def __init__(self):
         super().__init__('movil_node')
 #        self.port = "/dev/Joystick"
-        self.port = "/dev/ttyUSB0"
+        self.port = "/dev/bluetooth_movil"
         self.movil = ComMovil()  # Ajusta el puerto según corresponda
         self.movil.establecePuerto(self.port)
         self.publisher_name = self.create_publisher(String, 'name_movil', 2)
@@ -153,7 +154,20 @@ class movilNode(Node):
         self.publisher_modo = self.create_publisher(String,'modo_exp',2)
         self.publisher_ejecucion = self.create_publisher(Int32,'Ejecucion',5)
         self.timer = self.create_timer(0.5, self.timer_callback)  # Llama a la función cada segundo
+        self.nombre = None
+        self.tipo_experimento = None
+        self.modo = None
+        self.fase = None
+        self.srv = self.create_service(Movil, 'sujeto_experimental', self.server_callback)
 
+    def server_callback(self,request,response):
+        if request.command == 1:
+            if self.nombre is not None:
+                response.status = True
+                response.out = self.nombre
+            else:
+                response.status =False
+        pass
 
     def timer_callback(self):
         if self.movil.hayComando():
@@ -165,15 +179,18 @@ class movilNode(Node):
                 msg = String()
                 msg.data = valor
                 self.publisher_name.publish(msg)
+                self.nombre = valor
                 self.get_logger().info(f'Dato publicado Nombre_Sujeto: {msg.data}')
             elif tipo==5:
                 msg = String()
                 msg.data = 'Experimento '+valor
+                self.tipo_experimento=valor
                 self.publisher_tipo.publish(msg)
                 self.get_logger().info(f'Dato publicado Tipo Experimento: {msg.data}')
             elif tipo==7:
                 msg =String()
                 msg.data = 'Modo:'+valor
+                self.modo = valor
                 self.publisher_modo.publish(msg)
                 self.get_logger().info(f'Dato publicado Modo: {msg.data}')
             else:
@@ -182,6 +199,7 @@ class movilNode(Node):
                     msg.data = 20  #Start
                 elif tipo==3:
                     msg.data = 30 #Stop
+                    self.name=None   #Probar esto
                 elif tipo==6:
                     msg.data = 40   #Error
                 elif tipo==4:
@@ -190,12 +208,71 @@ class movilNode(Node):
                     msg.data=50
                 else:
                     msg.data = -1
+                self.fase = str(msg.data)
                 self.publisher_ejecucion.publish(msg)
                 self.get_logger().info(f'Dato publicado Fase Ejecucion: {msg.data}')
             
 
     def destroy_serial(self):
         del self.movil
+
+
+# class movilNode(Node):    #Este código está probado y funciona
+#     def __init__(self):
+#         super().__init__('movil_node')
+# #        self.port = "/dev/Joystick"
+#         self.port = "/dev/bluetooth_movil"
+#         self.movil = ComMovil()  # Ajusta el puerto según corresponda
+#         self.movil.establecePuerto(self.port)
+#         self.publisher_name = self.create_publisher(String, 'name_movil', 2)
+#         self.publisher_tipo = self.create_publisher(String,'tipo_exp',2)
+#         self.publisher_modo = self.create_publisher(String,'modo_exp',2)
+#         self.publisher_ejecucion = self.create_publisher(Int32,'Ejecucion',5)
+#         self.timer = self.create_timer(0.5, self.timer_callback)  # Llama a la función cada segundo
+
+
+#     def timer_callback(self):
+#         if self.movil.hayComando():
+#             comando=self.movil.lecturaComando()
+#             print(comando)
+#             tipo,valor=self.movil.commandParser(comando)
+#             print(f'tipo: {tipo}')
+#             if tipo==1:
+#                 msg = String()
+#                 msg.data = valor
+#                 self.publisher_name.publish(msg)
+#                 self.get_logger().info(f'Dato publicado Nombre_Sujeto: {msg.data}')
+#             elif tipo==5:
+#                 msg = String()
+#                 msg.data = 'Experimento '+valor
+#                 self.publisher_tipo.publish(msg)
+#                 self.get_logger().info(f'Dato publicado Tipo Experimento: {msg.data}')
+#             elif tipo==7:
+#                 msg =String()
+#                 msg.data = 'Modo:'+valor
+#                 self.publisher_modo.publish(msg)
+#                 self.get_logger().info(f'Dato publicado Modo: {msg.data}')
+#             else:
+#                 msg = Int32()
+#                 if tipo==2:
+#                     msg.data = 20  #Start
+#                 elif tipo==3:
+#                     msg.data = 30 #Stop
+#                 elif tipo==6:
+#                     msg.data = 40   #Error
+#                 elif tipo==4:
+#                     msg.data=int(valor,16)
+#                 elif tipo==8:
+#                     msg.data=50
+#                 else:
+#                     msg.data = -1
+#                 self.publisher_ejecucion.publish(msg)
+#                 self.get_logger().info(f'Dato publicado Fase Ejecucion: {msg.data}')
+            
+
+#     def destroy_serial(self):
+#         del self.movil
+
 
 def main(args=None):
     rclpy.init(args=args)

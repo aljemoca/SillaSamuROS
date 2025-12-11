@@ -19,6 +19,10 @@ samuchair/__init__.py
 samuchair/arduinoNode.py
 samuchair/esp32Node.py
 samuchair/esp32Node_old.py
+samuchair/jBNode.py
+samuchair/joystickBluetoothNode.py
+samuchair/main.py
+samuchair/mapJoyFingerChair.py
 samuchair/movilNode.py
 samuchair/secondarytaskNode.py
 samuchair/tactilesNode.py

@@ -1,0 +1,65 @@
+[6.943s] Invoking command in '/home/labserver/ros2_ws/src/samuchair': PYTHONPATH=/home/labserver/ros2_ws/build/samuchair/prefix_override:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/samuchair build --build-base /home/labserver/ros2_ws/build/samuchair/build install --record /home/labserver/ros2_ws/build/samuchair/install.log --single-version-externally-managed
+[8.559s] running egg_info
+[8.651s] writing ../../build/samuchair/samuchair.egg-info/PKG-INFO
+[8.656s] writing dependency_links to ../../build/samuchair/samuchair.egg-info/dependency_links.txt
+[8.661s] writing entry points to ../../build/samuchair/samuchair.egg-info/entry_points.txt
+[8.668s] writing requirements to ../../build/samuchair/samuchair.egg-info/requires.txt
+[8.688s] writing top-level names to ../../build/samuchair/samuchair.egg-info/top_level.txt
+[9.789s] reading manifest file '../../build/samuchair/samuchair.egg-info/SOURCES.txt'
+[9.794s] writing manifest file '../../build/samuchair/samuchair.egg-info/SOURCES.txt'
+[9.796s] running build
+[9.802s] running build_py
+[9.802s] copying samuchair/arduinoNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.803s] copying samuchair/joystickBluetoothNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.808s] copying samuchair/movilNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.808s] copying samuchair/webcamNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.808s] copying samuchair/tactilesNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.811s] copying samuchair/secondarytaskNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.812s] copying samuchair/ComJoystickManual.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.812s] copying samuchair/Webcam.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.814s] copying samuchair/esp32Node.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.814s] copying samuchair/jBNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.814s] copying samuchair/esp32Node_old.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.817s] copying samuchair/testArduinoNode.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.820s] copying samuchair/__init__.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.821s] copying samuchair/SecondaryTask.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.824s] copying samuchair/ComESP32.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.824s] copying samuchair/mapJoyFingerChair.py -> /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair
+[9.830s] /home/labserver/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[9.830s] !!
+[9.830s] 
+[9.830s]         ********************************************************************************
+[9.830s]         Please avoid running ``setup.py`` directly.
+[9.831s]         Instead, use pypa/build, pypa/installer or other
+[9.831s]         standards-based tools.
+[9.831s] 
+[9.831s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[9.831s]         ********************************************************************************
+[9.831s] 
+[9.834s] !!
+[9.834s]   self.initialize_options()
+[9.834s] running install
+[9.867s] running install_lib
+[9.958s] copying /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair/movilNode.py -> /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair
+[9.964s] copying /home/labserver/ros2_ws/build/samuchair/build/lib/samuchair/esp32Node.py -> /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair
+[9.968s] byte-compiling /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair/movilNode.py to movilNode.cpython-310.pyc
+[9.971s] byte-compiling /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair/esp32Node.py to esp32Node.cpython-310.pyc
+[9.973s] running install_data
+[10.045s] copying launch/record_samuchair.launch.py -> /home/labserver/ros2_ws/install/samuchair/share/samuchair/launch
+[10.047s] copying launch/samuchair.launch.py -> /home/labserver/ros2_ws/install/samuchair/share/samuchair/launch
+[10.048s] copying resource/samuchair -> /home/labserver/ros2_ws/install/samuchair/share/ament_index/resource_index/packages
+[10.048s] copying package.xml -> /home/labserver/ros2_ws/install/samuchair/share/samuchair
+[10.048s] running install_egg_info
+[10.105s] removing '/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair-0.0.0-py3.10.egg-info' (and everything under it)
+[10.109s] Copying ../../build/samuchair/samuchair.egg-info to /home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages/samuchair-0.0.0-py3.10.egg-info
+[10.109s] running install_scripts
+[10.358s] Installing arduinoNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.359s] Installing esp32Node script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.364s] Installing jBNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.364s] Installing movilNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.364s] Installing secondarytaskNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.373s] Installing tactilesNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.374s] Installing testArduinoNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.374s] Installing webcamNode script to /home/labserver/ros2_ws/install/samuchair/lib/samuchair
+[10.374s] writing list of installed files to '/home/labserver/ros2_ws/build/samuchair/install.log'
+[10.477s] Invoked command in '/home/labserver/ros2_ws/src/samuchair' returned '0': PYTHONPATH=/home/labserver/ros2_ws/build/samuchair/prefix_override:/home/labserver/ros2_ws/install/samuchair/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/samuchair build --build-base /home/labserver/ros2_ws/build/samuchair/build install --record /home/labserver/ros2_ws/build/samuchair/install.log --single-version-externally-managed

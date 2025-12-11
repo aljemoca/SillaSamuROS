@@ -32,6 +32,7 @@ setup(
                             'testArduinoNode=samuchair.testArduinoNode:main',
                             'movilNode=samuchair.movilNode:main',
                             'tactilesNode=samuchair.tactilesNode:main',
+                            'jBNode=samuchair.jBNode:main',
         ],
     },
 )

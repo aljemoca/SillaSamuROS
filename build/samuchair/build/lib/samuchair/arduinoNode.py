@@ -15,41 +15,51 @@ class arduinoNode(Node):
         self.arduino = ComJoystickManual.ComJoystickManual()  # Ajusta el puerto según corresponda
         # Crea el servicio
         self.srv = self.create_service(ArduinoMotor, 'control_joystick', self.handle_joystick_silla)
-
+        self.puerto = '/dev/Joystick'     #Tiene que estar en las reglas udev
 
         # Inicializa conexión serial con Arduino
-        try:
-            puerto = '/dev/Joystick'     #Tiene que estar en las reglas udev
-            self.arduino.establecePuerto(puerto)
-            self.get_logger().info("Conectado al Arduino por "+puerto)
-            #Puede ser modo local (1: el usuario usa joystick) o modo remoto 1
-            if self.arduino.esLocal():
-                self.modo=0
-            else:
-                self.modo=1
-            self.timer = self.create_timer(6.0, self.timer_callback)  # Llama a la función cada segundo
+        self.secuencia_conexion()
+        self.timerConexion = self.create_timer(1.5, self.timerConexion_callback)
 
+    def timerConexion_callback(self):
+        if not self.arduino.conectado():
+            self.secuencia_conexion()
+        
+    def secuencia_conexion(self):
+        try:
+            self.arduino.establecePuerto(self.puerto)
+            self.get_logger().info("Conectado al Arduino por "+self.puerto)
+            #Puede ser modo local (0: el usuario usa joystick) o modo remoto 1
+            if self.arduino.conectado():
+                if self.arduino.esLocal():
+                    self.modo=0
+                else:
+                    self.modo=1
+                if not hasattr(self.arduino,"timer_callback"):
+                    self.timer = self.create_timer(6.0, self.timer_callback)  # Llama a la función cada segundo
         except:
             self.get_logger().error(f"No se pudo abrir el puerto serie")
         
+
     def timer_callback(self):
-        if self.modo==1:    #En modo remoto se manda cada 6 segundos comandos para que no pase a modo local
+        if self.modo==1 and self.arduino.conectado():    #En modo remoto se manda cada 6 segundos comandos para que no pase a modo local
             if self.arduino.esLocal():  #Me da mal rollo que pueda haber varios procesos accediendo al puerto. Pensar bloquearlos
                 self.modo=0
 
     def __del__(self):
-        self.arduino.close()
+        #self.arduino.close()
         del self.arduino
 
     def handle_joystick_silla(self, request, response):
         if not self.arduino.conectado():
-            response.success = False
+            response.status = False
             response.out = "Puerto serie no disponible"
+            self.secuencia_conexion()
             return response
 
         command = request.command.strip()
         self.get_logger().info(f"Enviando comando al Arduino: {command}")
-        print(command)
+        #print(command)
 
         
         if command == 'modo':

@@ -41,11 +41,11 @@ class webcamNode(Node):
 
     def sus_name_movil(self,msg):
         self.name = msg.data
+        self.webcam.setName(self.name)
 
     def sus_ejecucion(self,msg):
         if msg.data == 20:   #Mensaje Go!
             self.activa_webcam=True
-            self.webcam.setName(self.name)
         elif msg.data == 30:  #Mensaje Stop!
             self.activa_webcam=False
             

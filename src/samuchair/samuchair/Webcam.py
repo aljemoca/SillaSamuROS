@@ -35,7 +35,7 @@ class Webcam:
         self.ruta = "./fotos/"
         #elf.stop = 0
         self.n_frame = 1
-        self.name=None
+        self.name=''
 
     def setName(self,name):
         self.name=name

@@ -6,7 +6,7 @@ from std_msgs.msg import Int32
  # Asegúrate de que la ruta de importación sea correcta
 import serial
 from time import sleep
-from samuchair_interfaces.srv import Movil  # Importa tu srv generado
+#from samuchair_interfaces.srv import Movil  # Importa tu srv generado
 
 
 #Comunicaciones con el Móvil
@@ -164,7 +164,7 @@ class movilNode(Node):
         super().__init__('movil_node')
 #        self.port = "/dev/Joystick"
         self.port = "/dev/bluetooth_movil"
-        self.port = "/dev/ttyUSB0"
+ #       self.port = "/dev/ttyUSB0"
         self.movil = ComMovil()  # Ajusta el puerto según corresponda
         self.movil.establecePuerto(self.port)
         self.publisher_name = self.create_publisher(String, 'name_movil', 2)
@@ -177,16 +177,16 @@ class movilNode(Node):
         self.tipo_experimento = None
         self.modo = None
         self.fase = None
-        self.srv = self.create_service(Movil, 'sujeto_experimental', self.server_callback)
+#       self.srv = self.create_service(Movil, 'sujeto_experimental', self.server_callback)
 
-    def server_callback(self,request,response):
-        if request.command == 1:
-            if self.nombre is not None:
-                response.status = True
-                response.out = self.nombre
-            else:
-                response.status =False
-        pass
+    # def server_callback(self,request,response):
+    #     if request.command == 1:
+    #         if self.nombre is not None:
+    #             response.status = True
+    #             response.out = self.nombre
+    #         else:
+    #             response.status =False
+    #     pass
 
     def timer_reconexion_callback(self):
         if not self.movil.conectado():

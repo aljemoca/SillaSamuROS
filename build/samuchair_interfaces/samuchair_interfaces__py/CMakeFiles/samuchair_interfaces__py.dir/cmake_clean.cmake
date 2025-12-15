@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/samuchair_interfaces/srv/__init__.py"
   "../rosidl_generator_py/samuchair_interfaces/srv/_arduino_motor.py"
   "../rosidl_generator_py/samuchair_interfaces/srv/_arduino_motor_s.c"
+  "../rosidl_generator_py/samuchair_interfaces/srv/_movil.py"
+  "../rosidl_generator_py/samuchair_interfaces/srv/_movil_s.c"
   "CMakeFiles/samuchair_interfaces__py"
 )
 

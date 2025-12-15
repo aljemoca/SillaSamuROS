@@ -83,6 +83,7 @@ rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h: /opt/ros/humble/sha
 rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h: rosidl_adapter/samuchair_interfaces/srv/ArduinoMotor.idl
+rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h: rosidl_adapter/samuchair_interfaces/srv/Movil.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/labserver/ros2_ws/build/samuchair_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_c__arguments.json
 
@@ -95,8 +96,23 @@ rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__struct.h: rosi
 rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__type_support.h: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__type_support.h
 
+rosidl_generator_c/samuchair_interfaces/srv/movil.h: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/movil.h
+
+rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.h: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.h
+
+rosidl_generator_c/samuchair_interfaces/srv/detail/movil__struct.h: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/detail/movil__struct.h
+
+rosidl_generator_c/samuchair_interfaces/srv/detail/movil__type_support.h: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/detail/movil__type_support.h
+
 rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c
+
+rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c: rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c
 
 CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o: rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c
@@ -112,19 +128,35 @@ CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c -o CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.s
 
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o: rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/labserver/ros2_ws/build/samuchair_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o -MF CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o.d -o CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o -c /home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c
+
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c > CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.i
+
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c -o CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.s
+
 # Object files for target samuchair_interfaces__rosidl_generator_c
 samuchair_interfaces__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o"
+"CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o" \
+"CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o"
 
 # External object files for target samuchair_interfaces__rosidl_generator_c
 samuchair_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libsamuchair_interfaces__rosidl_generator_c.so: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o
+libsamuchair_interfaces__rosidl_generator_c.so: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o
 libsamuchair_interfaces__rosidl_generator_c.so: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/build.make
 libsamuchair_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libsamuchair_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libsamuchair_interfaces__rosidl_generator_c.so: CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/labserver/ros2_ws/build/samuchair_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libsamuchair_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/labserver/ros2_ws/build/samuchair_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libsamuchair_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +172,11 @@ CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator
 CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.h
 CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__struct.h
 CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__type_support.h
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.h
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/movil__struct.h
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/detail/movil__type_support.h
+CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/samuchair_interfaces/srv/movil.h
 	cd /home/labserver/ros2_ws/build/samuchair_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/labserver/ros2_ws/src/samuchair_interfaces /home/labserver/ros2_ws/src/samuchair_interfaces /home/labserver/ros2_ws/build/samuchair_interfaces /home/labserver/ros2_ws/build/samuchair_interfaces /home/labserver/ros2_ws/build/samuchair_interfaces/CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/depend
 

@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/srv/__init__.py" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/srv/_arduino_motor.py" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/srv/_arduino_motor_s.c" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/srv/_movil.py" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/srv/_movil_s.c" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_py/samuchair_interfaces/_samuchair_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

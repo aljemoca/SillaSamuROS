@@ -96,13 +96,15 @@ class ComJoystickManual:
             else:
                 car = self.safe_read()
             buffer[ind] = car
-            #print(buffer)
+        #print(buffer)
             if buffer[ind].upper() >='A' and buffer[ind].upper()<='Z' :
                 ind+=1
             cont+=1
         #print(ind)
         if	ind>0:
             res = ''.join(str(e) for e in buffer[:ind-1])
+        else:
+            self.connected=False
         #print(res)
         if res==respuesta:
             ok=True

@@ -69,6 +69,9 @@ include CMakeFiles/samuchair_interfaces.dir/progress.make
 CMakeFiles/samuchair_interfaces: /home/labserver/ros2_ws/src/samuchair_interfaces/srv/ArduinoMotor.srv
 CMakeFiles/samuchair_interfaces: rosidl_cmake/srv/ArduinoMotor_Request.msg
 CMakeFiles/samuchair_interfaces: rosidl_cmake/srv/ArduinoMotor_Response.msg
+CMakeFiles/samuchair_interfaces: /home/labserver/ros2_ws/src/samuchair_interfaces/srv/Movil.srv
+CMakeFiles/samuchair_interfaces: rosidl_cmake/srv/Movil_Request.msg
+CMakeFiles/samuchair_interfaces: rosidl_cmake/srv/Movil_Response.msg
 
 samuchair_interfaces: CMakeFiles/samuchair_interfaces
 samuchair_interfaces: CMakeFiles/samuchair_interfaces.dir/build.make

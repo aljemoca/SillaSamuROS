@@ -9,7 +9,9 @@ find_package(rosidl_default_generators REQUIRED)
 
 # Generación de servicios
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/ArduinoMotor.srv")
+  "srv/ArduinoMotor.srv"
+  "srv/Movil.srv")
+
 
 # Exportar runtime de ROSIDL (clave para Python)
 ament_export_dependencies(rosidl_default_runtime)

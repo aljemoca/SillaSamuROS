@@ -1,0 +1,42 @@
+[0.565s] Invoking command in '/home/labserver/ros2_ws/build/samuchair_interfaces': /usr/bin/cmake /home/labserver/ros2_ws/src/samuchair_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/labserver/ros2_ws/install/samuchair_interfaces
+[1.016s] -- The C compiler identification is GNU 11.4.0
+[1.411s] -- The CXX compiler identification is GNU 11.4.0
+[1.455s] -- Detecting C compiler ABI info
+[1.755s] -- Detecting C compiler ABI info - done
+[1.777s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.781s] -- Detecting C compile features
+[1.788s] -- Detecting C compile features - done
+[1.805s] -- Detecting CXX compiler ABI info
+[2.180s] -- Detecting CXX compiler ABI info - done
+[2.206s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.209s] -- Detecting CXX compile features
+[2.215s] -- Detecting CXX compile features - done
+[2.237s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.433s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.841s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.875s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.910s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.139s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.852s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.089s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.368s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.401s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.404s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.441s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.441s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.442s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.442s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.467s] -- Found PythonExtra: .so  
+[5.655s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:213 (add_custom_target):
+[5.655s]   add_custom_target cannot create target "samuchair_interfaces" because
+[5.655s]   another target with the same name already exists.  The existing target is a
+[5.655s]   custom target created in source directory
+[5.655s]   "/home/labserver/ros2_ws/src/samuchair_interfaces".  See documentation for
+[5.655s]   policy CMP0002 for more details.
+[5.655s] Call Stack (most recent call first):
+[5.655s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[5.655s] 
+[5.655s] [0m
+[5.689s] -- Configuring incomplete, errors occurred!
+[5.689s] See also "/home/labserver/ros2_ws/build/samuchair_interfaces/CMakeFiles/CMakeOutput.log".
+[5.700s] Invoked command in '/home/labserver/ros2_ws/build/samuchair_interfaces' returned '1': /usr/bin/cmake /home/labserver/ros2_ws/src/samuchair_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/labserver/ros2_ws/install/samuchair_interfaces

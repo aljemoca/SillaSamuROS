@@ -360,6 +360,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/samuchair_interfaces/srv" TYPE FILE FILES "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_adapter/samuchair_interfaces/srv/Movil.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/samuchair_interfaces/srv" TYPE FILE FILES "/home/labserver/ros2_ws/src/samuchair_interfaces/srv/ArduinoMotor.srv")
 endif()
 
@@ -369,6 +373,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/samuchair_interfaces/srv" TYPE FILE FILES "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_cmake/srv/ArduinoMotor_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/samuchair_interfaces/srv" TYPE FILE FILES "/home/labserver/ros2_ws/src/samuchair_interfaces/srv/Movil.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/samuchair_interfaces/srv" TYPE FILE FILES "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_cmake/srv/Movil_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/samuchair_interfaces/srv" TYPE FILE FILES "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_cmake/srv/Movil_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

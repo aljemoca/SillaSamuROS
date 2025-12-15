@@ -83,6 +83,7 @@ class arduinoNode(Node):
                 response.out = 'Cuidador'              
             
         if command == 'velocidad':
+            self.arduino.controlRemoto()
             response.status=self.arduino.escribeMandos(request.x,request.y)
             response.out='Configurando Velocidad'    
         if command == 'velocidad?':

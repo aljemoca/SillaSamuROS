@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/detail/arduino_motor__builder.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
   "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/detail/arduino_motor__struct.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
   "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/detail/arduino_motor__traits.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
+  "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/detail/movil__builder.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
+  "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/detail/movil__struct.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
+  "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/detail/movil__traits.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
+  "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/movil.hpp" "/home/labserver/ros2_ws/build/samuchair_interfaces/rosidl_generator_cpp/samuchair_interfaces/srv/arduino_motor.hpp"
   )
 
 

@@ -29,45 +29,61 @@ TAM_BUFFER = 30
 class ComMovil:
     
     def __init__(self):
-        self.puerto=''
-        self.ser=''
+        self.puerto=None
+        self.ser=None
         self.comandoRecibido=False
         self.buffer=['0']*TAM_BUFFER
         self.comando=''
         self.index=0
-        return
+        
     
     def isCommandReady(self):
         return self.commandoRecibido
     
     def __del__(self):
-        self.ser.close()
+        try:
+            self.ser.close()
+            self.puerto=None
+            self.ser=None
+            self.index=0
+            self.comandoRecibido=False
+        except:
+            pass
 
     def	conectado(self):
         ok=True
-        if self.puerto=='':
+        if self.puerto==None:
             ok=False
         return ok  
    
 
     def hayDatos(self):
-        return self.ser.in_waiting>0
+        try:
+            n= self.ser.in_waiting
+        except:
+            n=0
+            self.puerto=None
+        return n
     
 
     def hayComando(self):
-        while self.hayDatos() and not self.comandoRecibido:
-            self.buffer[self.index]=self.ser.read().decode('utf-8', errors='ignore')
-            if self.buffer[self.index]=='!':
-                self.comando=''.join(self.buffer[0:self.index])
-                self.comandoRecibido=True
-                self.index=0
-                print(f'Comando: {self.buffer}')
-            else:
-                if self.buffer[self.index]!='\r' and self.buffer[self.index]!='\n':
-                    self.index = self.index+1
-                if self.index == TAM_BUFFER -1:
-                    self.index=0
-                self.commandoRecibido=False
+        if self.puerto is not None:
+            while self.hayDatos() and not self.comandoRecibido:
+                try:
+                    self.buffer[self.index]=self.ser.read().decode('utf-8', errors='ignore')
+                    if self.buffer[self.index]=='!':
+                        self.comando=''.join(self.buffer[0:self.index])
+                        self.comandoRecibido=True
+                        self.index=0
+                        print(f'Comando: {self.buffer}')
+                    else:
+                        if self.buffer[self.index]!='\r' and self.buffer[self.index]!='\n':
+                            self.index = self.index+1
+                        if self.index == TAM_BUFFER -1:
+                            self.index=0
+                        self.commandoRecibido=False
+                except:
+                    self.puerto =None
         return self.comandoRecibido
     
     def lecturaComando(self):
@@ -107,19 +123,19 @@ class ComMovil:
 
 
     
-    def	buscaPuerto(self):
-        raiz='/dev/ttyUSB'
-        mensaje="Buscando puerto para el control del motor"
-        sleep(2.0)
-        print(mensaje)
-        ok=False
-        for p in range(4):
-            portname=raiz+str(p)
-            ser=[]
-            if(self.establecePuerto(portname)):
-                ok=True;
-                return ok
-        return ok
+    # def	buscaPuerto(self):
+    #     raiz='/dev/ttyUSB'
+    #     mensaje="Buscando puerto para el control del motor"
+    #     sleep(2.0)
+    #     print(mensaje)
+    #     ok=False
+    #     for p in range(4):
+    #         portname=raiz+str(p)
+    #         ser=[]
+    #         if(self.establecePuerto(portname)):
+    #             ok=True;
+    #             return ok
+    #     return ok
  
             
     def consultaPuerto(self):
@@ -131,12 +147,13 @@ class ComMovil:
         print(puerto)
         try:
             self.ser=serial.Serial(port=puerto, baudrate=9600,timeout=0.5)
+            self.puerto=puerto
             #print(self.ser)
             sleep(2.0)
         except:
                 #print("No hay puerto"+portname)
             print('No fue posible la conexión al puerto '+ puerto)
-
+            self.puerto=None
 
         return ok
     
@@ -147,13 +164,15 @@ class movilNode(Node):
         super().__init__('movil_node')
 #        self.port = "/dev/Joystick"
         self.port = "/dev/bluetooth_movil"
+        self.port = "/dev/ttyUSB0"
         self.movil = ComMovil()  # Ajusta el puerto según corresponda
         self.movil.establecePuerto(self.port)
         self.publisher_name = self.create_publisher(String, 'name_movil', 2)
         self.publisher_tipo = self.create_publisher(String,'tipo_exp',2)
         self.publisher_modo = self.create_publisher(String,'modo_exp',2)
         self.publisher_ejecucion = self.create_publisher(Int32,'Ejecucion',5)
-        self.timer = self.create_timer(0.5, self.timer_callback)  # Llama a la función cada segundo
+        self.timer = self.create_timer(0.5, self.timer_callback)  # Llama a la función cada medio segundo
+        self.timer_reconexion = self.create_timer(2,self.timer_reconexion_callback)
         self.nombre = None
         self.tipo_experimento = None
         self.modo = None
@@ -169,7 +188,14 @@ class movilNode(Node):
                 response.status =False
         pass
 
+    def timer_reconexion_callback(self):
+        if not self.movil.conectado():
+            self.movil.establecePuerto(self.port)
+
     def timer_callback(self):
+        if not self.movil.conectado():
+            return
+        
         if self.movil.hayComando():
             comando=self.movil.lecturaComando()
             print(comando)

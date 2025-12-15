@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o"
   "CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.c.o.d"
+  "CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o"
+  "CMakeFiles/samuchair_interfaces__rosidl_generator_c.dir/rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c.o.d"
   "libsamuchair_interfaces__rosidl_generator_c.pdb"
   "libsamuchair_interfaces__rosidl_generator_c.so"
   "rosidl_generator_c/samuchair_interfaces/srv/arduino_motor.h"
@@ -8,6 +10,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__functions.h"
   "rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__struct.h"
   "rosidl_generator_c/samuchair_interfaces/srv/detail/arduino_motor__type_support.h"
+  "rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.c"
+  "rosidl_generator_c/samuchair_interfaces/srv/detail/movil__functions.h"
+  "rosidl_generator_c/samuchair_interfaces/srv/detail/movil__struct.h"
+  "rosidl_generator_c/samuchair_interfaces/srv/detail/movil__type_support.h"
+  "rosidl_generator_c/samuchair_interfaces/srv/movil.h"
 )
 
 # Per-language clean rules from dependency scanning.

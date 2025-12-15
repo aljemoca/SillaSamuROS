@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from samuchair_interfaces/srv/Movil.srv
+// generated code does not contain a copyright notice
+
+
+module samuchair_interfaces {
+  module srv {
+    struct Movil_Request {
+      uint8 command;
+    };
+    struct Movil_Response {
+      boolean status;
+
+      string out;
+    };
+  };
+};
